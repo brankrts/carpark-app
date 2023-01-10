@@ -9,10 +9,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "6.5.2",
+    "@react-navigation/native-stack": "^6.9.7",
+    "@reduxjs/toolkit": "^1.9.1",
     "expo": "~47.0.9",
+    "expo-location": "~15.0.1",
     "expo-status-bar": "~1.4.2",
+    "firebase": "^9.15.0",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-native": "0.70.5",
+    "react-native-actions-sheet-picker": "^0.3.5",
+    "react-native-gesture-handler": "~2.8.0",
+    "react-native-maps": "^1.3.2",
+    "react-native-modal": "^13.0.1",
+    "react-native-paper": "^5.1.2",
+    "react-native-select-dropdown": "^3.1.0",
+    "react-redux": "^8.0.5",
+    "redux-toolkit": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

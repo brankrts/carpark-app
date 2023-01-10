@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+/** @format */
+
+import { Logs } from "expo";
+import { Provider } from "react-redux";
+import { store } from "./src/redux/store";
+import Routes from "./src/router/Routes";
+import { SafeAreaView } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
+  Logs.enableExpoCliLogging();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <SafeAreaView style={{ flex: 1, backgroundColor: "gray" }}>
+          <Routes />
+        </SafeAreaView>
+      </NavigationContainer>
+    </Provider>
   );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}
